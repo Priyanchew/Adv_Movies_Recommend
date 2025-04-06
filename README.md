@@ -4,7 +4,7 @@ This project is an advanced movie recommendation system that leverages Graph Neu
 
 ## Features
 
-- **Graph Neural Networks (GNNs):**
+#### Graph Neural Networks (GNNs):
 - Utilizes GNNs to model and analyze complex relationships between movies and user preferences, enhancing recommendation accuracy.
   
 #### Content-Based Filtering
