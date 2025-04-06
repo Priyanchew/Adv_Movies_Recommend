@@ -49,21 +49,21 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/Priyanchew/Adv_Movies_Recommend.git
    ```
-
+
 
 2. **Navigate to the project directory:**
 
    ```bash
    cd Adv_Movies_Recommend
    ```
-
+
 
 3. **Install the required dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
-
+
 
 ## Usage
 
@@ -73,7 +73,7 @@ To run the application:
 ```bash
 streamlit run main.py
 ```
-
+
 
 This command will launch the Streamlit application in your default web browser, allowing you to interact with the movie recommendation system.
 
