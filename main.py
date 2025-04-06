@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import ast
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 # ====== 1. Data Setup: Load Movies from CSV ======
 @st.cache_data  # Cache the data loading to improve performance
@@ -66,7 +70,7 @@ try:
 except ImportError:
     have_genai = False
 
-API_KEY = "AIzaSyB8H_nafmFcSG9cObSxLMZlaPGRnIFTxYc"  # <<< REPLACE with your Gemini API key for full LLM functionality.
+API_KEY = os.getenv("GEMINI_API_KEY")  # <<< REPLACE with your Gemini API key for full LLM functionality.
 if have_genai and API_KEY and API_KEY != "YOUR-API-KEY":
     genai.configure(api_key=API_KEY)
     # Choose a Gemini model to use for text generation.

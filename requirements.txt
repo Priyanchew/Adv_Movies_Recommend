@@ -3,4 +3,5 @@ pandas==2.2.1
 numpy==1.26.4
 scikit-learn==1.4.1
 google-generativeai==0.3.2
-ast==1.0.0 
+ast==1.0.0
+python-dotenv==1.0.1 

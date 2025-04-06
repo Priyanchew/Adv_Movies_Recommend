@@ -1,10 +1,15 @@
+from dotenv import load_dotenv
+import os
+
 try:
     import google.generativeai as genai
     have_genai = True
 except ImportError:
     have_genai = False
 
-API_KEY = "AIzaSyB8H_nafmFcSG9cObSxLMZlaPGRnIFTxYc"  # Replace with your API key
+# Load environment variables from .env file
+load_dotenv()
+API_KEY = os.getenv("GEMINI_API_KEY")
 
 if have_genai and API_KEY and API_KEY != "YOUR-API-KEY":
     genai.configure(api_key=API_KEY)
