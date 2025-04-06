@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+.env
+GNN/dataset_base
+GNN/ml-1m
+GNN/ml-latest
+movie_recommender_app/utils/__pycache__
+movie_recommender_app/llm/__pycache__
+movie_recommender_app/recommenders/__pycache__
